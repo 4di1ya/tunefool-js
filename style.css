@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0% 0%;
+}
+#navbar{
+    border: 0.125rem solid black;
+    height: 8%;
+    width: 100%;
+    display: flex;
+
+}
+.logo{
+    width: 20%;
+    border: 2px solid red;
+    display: flex;
+    
+}
+img{
+    height: 44px;
+    margin: 2px 8px;
+    
+}
+.logo div{
+    border: 1px solid green;
+    padding: 2px 4px;
+
+}
+.logo div p{
+    margin: 0%;
+    font-size: 13px;
+}
+.play{
+    width: 60%;
+    border: 2px solid black;
+    
+}
+.account{
+    width: 20%;
+    border: 2px solid yellow;
+}
+
+#container{
+    display: flex;
+    height: 92%;
+    width: 100%;
+    border: 1.2rem solid purple;
+
+}
+#left{
+    border: 0.125rem solid red;
+    width: 16%;
+    height: 100%;
+}
+.lup{
+    border: 0.125rem solid rgb(0, 255, 26);
+    width: 100%;
+    height: 20%; 
+}
+.lup div{
+    border: 0.125rem solid yellow;
+    margin: 0.5rem 0.25rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+/* Last Played Section begins */
+.ldown{
+    border: 0.125rem solid blue;
+    width: 100%;
+    height: 80%;
+}
+.ldown1{
+    border: 0.125rem solid black;
+    height: 8%;
+    padding: 0.5rem 1rem;
+}
+.ldownlow{
+    
+    border: 0.25rem solid green;
+    height: 92%;
+    overflow-y: auto;
+    bottom: 0%;
+}
+.ldownlow div{
+    height: 2.8rem;
+    border: 0.125rem solid yellow;
+    margin: 0.5rem 0.25rem;
+    font-size: large;
+    font-weight: 600;
+}
+/* Last Played Section ends */
+
+#right{
+    border: 0.25 solid blue;
+    width: 84%;
+    overflow-y: auto;
+    height: 100%;
+}
+.trending{
+    border: 8px solid indigo;
+    width: 100%;
+
+    
+}
+.trending div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.trending div div{
+    border: 2px solid greenyellow;
+    height: 50px;
+}
+.default{
+    width: 48px;
+    
+}
+.default{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.albums{
+    border: 0.25rem solid brown;
+    
+    
+}
+.albums div{
+    border: 0.125rem solid sandybrown;
+    overflow-x: auto;
+    height: 80%;
+    display: flex;
+
+}
+.albums div div{
+    flex-shrink: 0;
+    margin: 2px ;
+    border: 0.125rem solid black;
+    border-radius: 4%;
+    width: 24%;
+    height: 12rem;
+    justify-content: center;
+}
+.fm{
+    border: 0.25rem solid brown;
+    
+    
+}
+.fm div{
+    border: 0.125rem solid sandybrown;
+    overflow-x: auto;
+    height: 80%;
+    display: flex;
+
+}
+.fm div div{
+    flex-shrink: 0;
+    margin: 2px ;
+    border: 0.125rem solid black;
+    border-radius: 4%;
+    width: 24%;
+    height: 12rem;
+    justify-content: center;
+}
+
+/* footer */
+.footer{
+    border: 4px solid #e91e63;
+    height: 24%;
+}
