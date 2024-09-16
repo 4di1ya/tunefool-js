@@ -4,92 +4,92 @@
 body{
     height: 100vh;
     margin: 0% 0%;
-}
-#navbar{
-    border: 0.125rem solid black;
-    height: 8%;
-    width: 100%;
-    display: flex;
+    /* background: rgb(37 37 38); */
+    /* background: black; */
 
-}
-.logo{
-    width: 20%;
-    border: 2px solid red;
-    display: flex;
-    
-}
-img{
-    height: 44px;
-    margin: 2px 8px;
-    
-}
-.logo div{
-    border: 1px solid green;
-    padding: 2px 4px;
-
-}
-.logo div p{
-    margin: 0%;
-    font-size: 13px;
-}
-.play{
-    width: 60%;
-    border: 2px solid black;
-    
-}
-.account{
-    width: 20%;
-    border: 2px solid yellow;
 }
 
 #container{
     display: flex;
     height: 92%;
     width: 100%;
-    border: 1.2rem solid purple;
+    /* border: 1.2rem solid purple; */
 
 }
 #left{
-    border: 0.125rem solid red;
+    /* border: 0.125rem solid red; */
+    background: rgb(31 31 31);
+    border: 0.125rem solid rgba(255, 153, 0, 0.684);
     width: 16%;
     height: 100%;
+    margin: 8px 0;
+    color: rgb(238 238 238);
+    
 }
 .lup{
-    border: 0.125rem solid rgb(0, 255, 26);
+    /* border: 0.125rem solid rgb(37, 187, 192, 1); */
     width: 100%;
     height: 20%; 
 }
+.lup div svg{
+    margin: 0px 8px;
+}
 .lup div{
-    border: 0.125rem solid yellow;
+    display: flex;
+    /* border: 0.125rem solid yellow; */
     margin: 0.5rem 0.25rem;
     font-size: large;
-    font-weight: 600;
+    font-weight: bolder;
+    /* justify-content: center; */
+    /* text-align: baseline; */
+      
+}
+.lup div:hover{
+    scale: 1.05;
+    
 }
 
 /* Last Played Section begins */
 .ldown{
-    border: 0.125rem solid blue;
+    /* border: 0.125rem solid rgb(37, 187, 192, 1); */
     width: 100%;
     height: 80%;
 }
 .ldown1{
-    border: 0.125rem solid black;
-    height: 8%;
-    padding: 0.5rem 1rem;
+    display: flex;
+    margin: 8px 0px;
+    /* border: 0.125rem solid black; */
+    border: 2px solid rgba(255, 153, 0, 0.684);
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 8px 8px;
+    height: 7%;
+    /* padding: 0.5rem 1rem; */
+    font-size: larger;
+    font-weight: bolder;
+    /* text-align: baseline; */
+
+}
+.ldown1 svg{
+    margin: 4px 8px;
 }
 .ldownlow{
     
-    border: 0.25rem solid green;
+    /* border: 0.25rem solid green; */
     height: 92%;
     overflow-y: auto;
     bottom: 0%;
 }
 .ldownlow div{
     height: 2.8rem;
-    border: 0.125rem solid yellow;
+    /* border: 0.125rem solid yellow; */
     margin: 0.5rem 0.25rem;
     font-size: large;
     font-weight: 600;
+}
+.ldownlow div:hover{
+    scale: 1.08;
+    background: rgb(83, 83, 83);
 }
 /* Last Played Section ends */
 
@@ -171,6 +171,9 @@ img{
 
 /* footer */
 .footer{
-    border: 4px solid #e91e63;
-    height: 24%;
+    border: 2px solid rgba(255, 153, 0, 0.684);
+    background: rgb(37 37 38);
+    margin: 4px 4px;
+
+    height: 28%;
 }

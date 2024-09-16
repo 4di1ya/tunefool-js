@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUNEFOOL</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="masonry.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="hooneycomb.css">
 </head>
 <body>
@@ -16,16 +16,21 @@
                  <div >
                      <img src="logo.png" alt="">
                  </div>
-                 <div>
+                 <!-- <div>
                     <p>Fooling<br>Life On<br>Tunes!</p>
-                </div>
+                </div> -->
              
          </div>
          <div class="play">
-            play
+            <div>
+                <div>
+
+                </div>
+            </div>
          </div>
          <div class="account">
-            account
+            <button>Sign up</button>
+            <button>Log in</button>
          </div>
          
 
@@ -74,25 +79,7 @@
                 <div>hehehe</div>
                 <div>hehehe</div>
                 <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
-                <div>hehehe</div>
+                
 
                 </div>
 
@@ -101,71 +88,15 @@
         </div>
         
         <div id="right">
-            <!-- <div class="masonry">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-                <div class="box">8</div>
-                <div class="box">9</div>
-                <div class="box">10</div>
-                <div class="box">11</div>
-                <div class="box">12</div>
-                <div class="box">13</div>
-                <div class="box">14</div>
-                <div class="box">15</div>
-                <div class="box">16</div>
-                <div class="box">17</div>
-                <div class="box">18</div>
-                <div class="box">19</div>
-                
-            </div> -->
-            <ul class="honeycomb">
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-                <li class="honey">
-                    <img class="honeyimg" src="pexels.jpg" alt="">
-                    <div class="honeydiv">Song x</div>
-                </li>
-
-            </ul>
+            <div class="wrapper">
+                <ul class="honeycomb">
+                    <!-- <li class="honey">
+                        <img class="honeyimg" src="pexels.jpg" alt="">
+                        <div class="honeydiv">Song x</div>
+                    </li> -->
+                    
+                </ul>
+            </div>
             <div class="trending">
                 <p>Trending</p>
                 <div>
@@ -268,6 +199,33 @@
             <div class="footer">
 
             </div>
+        </div>
     </div>
+
+    <template id="cardTemplate">
+        <li class="honey">
+            <img class="honeyimg" src="pexels.jpg" alt="">
+            <div class="honeydiv">Song x</div>
+        </li>
+    </template>
+
+    <script>
+        const cards = 300;
+        const gridWidth = 20;
+        const cardTemplate = document.getElementById("cardTemplate");
+        const honeycomb = document.querySelector("ul.honeycomb");
+
+        honeycomb.style.width = `${gridWidth * 280}px`;
+
+        for (let idx = 0; idx < cards; idx++) {
+            const offset = (Math.floor(idx / gridWidth) % 2) === 1;
+
+            const cardNode = cardTemplate.content.cloneNode(true);
+            if (offset) {
+                cardNode.querySelector(".honey").style.translate = "50% 0";
+            }
+            honeycomb.appendChild(cardNode);
+        }
+    </script>
 </body>
 </html>
