@@ -4,12 +4,16 @@
 body{
     height: 100vh;
     margin: 0% 0%;
+    padding: 0% 0%;
     /* background: rgb(37 37 38); */
-    /* background: black; */
+    background: black;
+
 
 }
 
 #container{
+    color: rgb(238 238 238);
+
     display: flex;
     height: 92%;
     width: 100%;
@@ -18,11 +22,11 @@ body{
 }
 #left{
     /* border: 0.125rem solid red; */
-    background: rgb(31 31 31);
-    border: 0.125rem solid rgba(255, 153, 0, 0.684);
+    background: rgb(37 37 38);
+    /* border: 0.125rem solid rgba(255, 153, 0, 0.684); */
     width: 16%;
     height: 100%;
-    margin: 8px 0;
+    /* margin: 0% 0; */
     color: rgb(238 238 238);
     
 }
@@ -31,10 +35,13 @@ body{
     width: 100%;
     height: 20%; 
 }
-.lup div svg{
+.lupdiv{
+    padding: 16px 4px;
+}
+.lup div  div svg{
     margin: 0px 8px;
 }
-.lup div{
+.lup div div{
     display: flex;
     /* border: 0.125rem solid yellow; */
     margin: 0.5rem 0.25rem;
@@ -42,9 +49,10 @@ body{
     font-weight: bolder;
     /* justify-content: center; */
     /* text-align: baseline; */
+    align-items: center;
       
 }
-.lup div:hover{
+.lup div div:hover{
     scale: 1.05;
     
 }
@@ -57,9 +65,9 @@ body{
 }
 .ldown1{
     display: flex;
-    margin: 8px 0px;
+    /* margin: 8px 0px; */
     /* border: 0.125rem solid black; */
-    border: 2px solid rgba(255, 153, 0, 0.684);
+    /* border: 2px solid rgba(255, 153, 0, 0.684); */
     border-left-style: none;
     border-right-style: none;
     border-radius: 8px 8px;
@@ -68,6 +76,7 @@ body{
     font-size: larger;
     font-weight: bolder;
     /* text-align: baseline; */
+    align-items: center;
 
 }
 .ldown1 svg{
@@ -80,12 +89,18 @@ body{
     overflow-y: auto;
     bottom: 0%;
 }
+.ldownlow div img{
+    height: 2.5rem;
+}
 .ldownlow div{
     height: 2.8rem;
     /* border: 0.125rem solid yellow; */
     margin: 0.5rem 0.25rem;
     font-size: large;
-    font-weight: 600;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    
 }
 .ldownlow div:hover{
     scale: 1.08;
@@ -94,31 +109,47 @@ body{
 /* Last Played Section ends */
 
 #right{
-    border: 0.25 solid blue;
+    /* border: 0.25 solid blue; */
     width: 84%;
     overflow-y: auto;
     height: 100%;
+    margin: 2px 2px;
 }
 .trending{
-    border: 8px solid indigo;
+    /* border: 2px solid rgba(255, 153, 0, 0.684); */
     width: 100%;
+    background: rgb(31 31 31);
+    /* margin: 4px 4px; */
+    padding: 20px 12px;
 
-    
+}
+.trending p{
+    font-size: 36px;
+    font-weight: bolder;
 }
 .trending div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-}
-.trending div div{
-    border: 2px solid greenyellow;
-    height: 50px;
-}
-.default{
-    width: 48px;
+    gap: 10px;
+    /* backdrop-filter: blur(100px); */
     
 }
-.default{
+
+.trending div div{
+    /* border: 2px solid greenyellow; */
+    height: 50px;
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.trending div div:hover{
+    scale:1.02;
+}
+
+.default {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -127,12 +158,22 @@ body{
 
 
 .albums{
-    border: 0.25rem solid brown;
-    
+    /* border: 2px solid rgba(255, 153, 0, 0.684); */
+    background: rgb(31 31 31);
+    margin: 4px 0px;
+    /* margin: 4px 0px; */
+    padding: 20px 12px;
+
+
     
 }
+.albums p{
+    font-size: 36px;
+    font-weight: bolder;
+    /* padding: 4px 4px; */
+}
 .albums div{
-    border: 0.125rem solid sandybrown;
+    /* border: 0.125rem solid sandybrown; */
     overflow-x: auto;
     height: 80%;
     display: flex;
@@ -140,20 +181,34 @@ body{
 }
 .albums div div{
     flex-shrink: 0;
-    margin: 2px ;
-    border: 0.125rem solid black;
+    margin: 16px 4px ;
+    
+    /* border: 0.125rem solid black; */
     border-radius: 4%;
     width: 24%;
     height: 12rem;
     justify-content: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .fm{
-    border: 0.25rem solid brown;
-    
-    
+    /* border: 2px solid rgba(255, 153, 0, 0.684); */
+    background: rgb(31 31 31);
+
+    /* margin: 0px 4px; */
+    padding: 20px 12px;
+
+}
+.fm p{
+    font-size: 36px;
+    font-weight: bolder;
 }
 .fm div{
-    border: 0.125rem solid sandybrown;
+    
     overflow-x: auto;
     height: 80%;
     display: flex;
@@ -161,19 +216,33 @@ body{
 }
 .fm div div{
     flex-shrink: 0;
-    margin: 2px ;
+    /* margin: 2px ; */
+    margin: 16px 4px ;
+
     border: 0.125rem solid black;
     border-radius: 4%;
     width: 24%;
     height: 12rem;
-    justify-content: center;
+    justify-content: center; 
+
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* footer */
 .footer{
-    border: 2px solid rgba(255, 153, 0, 0.684);
-    background: rgb(37 37 38);
-    margin: 4px 4px;
-
+    /* border: 2px solid rgba(255, 153, 0, 0.684); */
+    background: rgb(31 31 31);
+    margin: 4px 0px;
+    padding: 4px 12px;
     height: 28%;
+}
+.footer p{
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 0% 0%;
 }
